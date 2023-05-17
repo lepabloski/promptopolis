@@ -9,7 +9,7 @@ session object. The `signin` function checks if the user already exists in the d
 a new user if they don't. Finally, the code exports the `handler` function to be used as both a GET
 and POST request. */
 const handler = NextAuth({
-  prviders: [
+  providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       ClientSecret: process.env.GOOGLE_CLIENT_SECRET,
